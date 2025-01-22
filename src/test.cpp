@@ -5,7 +5,7 @@ int main() {
   char c = '\0';
   std::cout << "Hit any key. Press 'q' to quit" << std::endl;
   while (c != 'q') {
-    c = read_key();
+    c = keystroker::read_key();
     std::cout << "You pressed: " << c << std::endl;
   }
 }

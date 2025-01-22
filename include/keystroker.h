@@ -8,11 +8,15 @@
 
 #ifdef __cplusplus
 #define DLL_EXPORT extern "C"
+namespace keystroker {
 #else
 #define DLL_EXPORT
 #endif
 
 DLL_EXPORT char read_key();
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif
